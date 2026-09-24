@@ -6,11 +6,11 @@ export default function SystemInventory() {
   return (
     <section id="skills" className="section-frame !border-b-0">
       <RevealSection>
-        <div className="bg-ink px-6 py-14 text-paper lg:px-14">
+        <div className="bg-ink px-4 py-10 text-paper sm:px-6 sm:py-14 lg:px-14">
           {/* ── Header ── */}
-          <div className="grid gap-8 lg:grid-cols-[120px_1fr_160px]">
+          <div className="grid gap-6 sm:gap-8 lg:grid-cols-[120px_1fr_160px]">
             <div className="reveal">
-              <div className="font-display text-6xl text-link">03</div>
+              <div className="font-display text-4xl text-link sm:text-6xl">03</div>
               <div className="section-kicker mt-2">
                 System
                 <br />
@@ -23,7 +23,7 @@ export default function SystemInventory() {
                   className="absolute inset-x-[-16px] top-[20%] bottom-[8%] -skew-y-1 bg-signal"
                   aria-hidden
                 />
-                <span className="relative font-display text-4xl uppercase leading-[0.9] tracking-[-0.03em] text-ink lg:text-5xl">
+                <span className="relative font-display text-2xl uppercase leading-[0.9] tracking-[-0.03em] text-ink sm:text-4xl lg:text-5xl">
                   Tools for the next build
                 </span>
               </h3>
@@ -46,7 +46,7 @@ export default function SystemInventory() {
                 <div className="grid grid-cols-[48px_1fr] items-center gap-4 md:grid-cols-[48px_28px_1fr_auto]">
                   <span className="font-display text-2xl text-signal">{row.n}</span>
                   <span className="hidden font-mono text-sm text-paper/70 md:block">{row.icon}</span>
-                  <h4 className="font-display text-2xl uppercase tracking-wide lg:text-3xl">{row.title}</h4>
+                  <h4 className="font-display text-lg uppercase tracking-wide sm:text-2xl lg:text-3xl">{row.title}</h4>
                   <span className="meta col-span-2 text-[10px] text-paper/50 md:col-span-1 md:text-right">
                     {row.note}
                   </span>

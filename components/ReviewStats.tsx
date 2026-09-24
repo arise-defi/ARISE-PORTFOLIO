@@ -103,7 +103,7 @@ export default function ReviewStats() {
           <span>実績</span>
         </div>
 
-        <h2 className="reveal reveal-delay-1 mt-6 font-display text-4xl uppercase leading-[0.88] tracking-[-0.03em] lg:text-5xl">
+        <h2 className="reveal reveal-delay-1 mt-5 font-display text-2xl uppercase leading-[0.88] tracking-[-0.03em] sm:mt-6 sm:text-4xl lg:text-5xl">
           Numbers that speak for themselves.
         </h2>
 
@@ -112,7 +112,7 @@ export default function ReviewStats() {
         </p>
 
         {/* Stats grid */}
-        <div className="mt-14 grid gap-6 sm:grid-cols-2">
+        <div className="mt-8 grid gap-4 sm:mt-14 sm:gap-6 sm:grid-cols-2">
           {/* Happy Customers */}
           <div ref={happy.ref} className="reveal reveal-delay-2 border border-ink">
             <div className="bg-ink px-5 py-3 flex items-center justify-between">
@@ -145,7 +145,7 @@ export default function ReviewStats() {
         </div>
 
         {/* ── Reviews ── */}
-        <div className="mt-16 border-t border-ink pt-10">
+        <div className="mt-10 border-t border-ink pt-8 sm:mt-16 sm:pt-10">
           <div className="reveal meta flex items-center gap-3 text-link mb-8">
             <span>WHAT USERS SAY</span>
             <span className="hidden h-px w-16 bg-ink/40 sm:block" />

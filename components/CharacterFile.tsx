@@ -10,8 +10,8 @@ function ProjectCard({ project, index }: { project: (typeof site.projects)[numbe
   return (
     <div className="reveal reveal-delay-2 mt-14 border-t border-ink pt-10">
       {/* Project header */}
-      <div className="flex flex-wrap items-center gap-4 mb-8">
-        <span className="font-display text-3xl text-link">{num}</span>
+      <div className="flex flex-wrap items-center gap-3 mb-6 sm:gap-4 sm:mb-8">
+        <span className="font-display text-2xl text-link sm:text-3xl">{num}</span>
         <div>
           <div className="section-kicker flex items-center gap-2">
             Featured project
@@ -21,7 +21,7 @@ function ProjectCard({ project, index }: { project: (typeof site.projects)[numbe
               </span>
             )}
           </div>
-          <h4 className="font-display text-3xl uppercase tracking-wide lg:text-4xl mt-1">{project.title}</h4>
+          <h4 className="font-display text-2xl uppercase tracking-wide sm:text-3xl lg:text-4xl mt-1">{project.title}</h4>
         </div>
         <span className="meta text-[10px] text-ink/50 ml-auto hidden sm:block">{project.subtitle}</span>
       </div>
@@ -48,12 +48,12 @@ function ProjectCard({ project, index }: { project: (typeof site.projects)[numbe
       </a>
 
       {/* Headline + Description */}
-      <div className="mt-8 grid gap-8 lg:grid-cols-[1fr_380px]">
+      <div className="mt-6 grid gap-6 sm:mt-8 sm:gap-8 lg:grid-cols-[1fr_380px]">
         <div>
-          <p className="font-display text-2xl uppercase leading-[0.9] tracking-[-0.02em] lg:text-3xl">
+          <p className="font-display text-xl uppercase leading-[0.9] tracking-[-0.02em] sm:text-2xl lg:text-3xl">
             {project.headline}
           </p>
-          <p className="mt-5 text-[14px] leading-relaxed text-ink/80 max-w-2xl">
+          <p className="mt-4 text-[13px] leading-relaxed text-ink/80 max-w-2xl sm:mt-5 sm:text-[14px]">
             {project.description}
           </p>
 
@@ -102,9 +102,9 @@ export default function CharacterFile() {
     <section id="work" className="section-frame">
       <RevealSection>
         {/* ── Section header ── */}
-        <div className="grid gap-8 lg:grid-cols-[120px_1fr_160px]">
+        <div className="grid gap-6 sm:gap-8 lg:grid-cols-[120px_1fr_160px]">
           <div className="reveal">
-            <div className="font-display text-6xl text-link">02</div>
+            <div className="font-display text-4xl text-link sm:text-6xl">02</div>
             <div className="section-kicker mt-2">Selected work</div>
           </div>
 
@@ -114,7 +114,7 @@ export default function CharacterFile() {
                 className="absolute inset-x-[-16px] top-[18%] bottom-[10%] -skew-y-1 bg-signal"
                 aria-hidden
               />
-              <span className="relative font-display text-4xl uppercase leading-[0.9] tracking-[-0.03em] lg:text-5xl">
+              <span className="relative font-display text-2xl uppercase leading-[0.9] tracking-[-0.03em] sm:text-4xl lg:text-5xl">
                 Quiet process. Sharp outcomes.
               </span>
             </h3>
@@ -134,9 +134,9 @@ export default function CharacterFile() {
         ))}
 
         {/* ── Profile stats — matches koiiverse.cloud layout ── */}
-        <div className="reveal reveal-delay-3 mt-12 grid gap-10 border-t border-ink pt-10 lg:grid-cols-[1fr_420px]">
+        <div className="reveal reveal-delay-3 mt-8 grid gap-8 border-t border-ink pt-8 sm:mt-12 sm:gap-10 sm:pt-10 lg:grid-cols-[1fr_420px]">
           <div>
-            <h4 className="font-display text-3xl uppercase leading-[0.88] tracking-[-0.03em] lg:text-4xl">
+            <h4 className="font-display text-2xl uppercase leading-[0.88] tracking-[-0.03em] sm:text-3xl lg:text-4xl">
               I build software with the patience of an artist inking the final panel: deliberately and with purpose.
             </h4>
 
